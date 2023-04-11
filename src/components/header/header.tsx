@@ -3,6 +3,7 @@ import bell from '../../assets/img/bell.svg'
 import qw from '../../assets/img/qw.svg'
 import sun from '../../assets/img/Sun.svg'
 import avatar from '../../assets/img/avatar.png'
+import {Link} from 'react-router-dom'
 
 const Header = ()=>{
     return(
@@ -13,8 +14,8 @@ const Header = ()=>{
                     <h2 className={s.headerSecond}>Разработчика</h2>
                 </div>
                 <nav className={s.nav}>
-                    <a className={s.nav__active} href="/">Моё обучение</a>
-                    <a href="/">Задачи</a>
+                    <Link className={s.nav__active} to="/geolacation">Моё обучение</Link>
+                    <Link to="/">Задачи</Link>
                 </nav>
             </div>
             <div className={s.right}>

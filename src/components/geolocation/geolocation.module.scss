@@ -1,0 +1,27 @@
+
+.geolocation{
+    margin: 20px;
+    .containerGeolocation{
+        width: fit-content;
+        padding: 10px;
+        background-color: #333;
+        border-radius: 6px;
+        color: #fff;
+    }
+}
+.geoLink{
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(51, 29, 164);
+    border: 1px solid rgb(51, 29, 164);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.geoLink:hover{
+    transition: .3s;
+    color: rgb(51, 29, 164);
+    background-color: #fff;
+}
