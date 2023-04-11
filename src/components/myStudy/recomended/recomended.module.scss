@@ -1,0 +1,271 @@
+.container{
+    padding-top: 48px;
+    .header{
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 150%;
+      color: #002033
+    }
+    .card{
+      display: flex;
+      align-items: center;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+      border-radius: 8px;
+      padding: 32px 0 32px 100px;
+      margin-top: 24px;
+      .circleBig {
+        position: relative;
+        width: 154px;
+        height: 154px;
+        svg {
+          display: block;
+          width: 154px;
+          height: 154px;
+          border-radius: 50%;
+        }  
+        .progessBg {
+          fill: none;
+          stroke-width: 16px;
+          stroke: rgba(0, 32, 51, 0.08);;
+        }
+        .progress {
+          fill: none;
+          stroke-width: 16px;
+          stroke: #24C38E;
+          stroke-dasharray: 376.56;
+          stroke-dashoffset: 0%;
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+        }
+        .circleText {
+          position: absolute;
+          width: 100%;
+          top: 30%;
+          text-align: center;
+          .progressNum{
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            color: #002033;
+          }
+          .progressText{
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: rgba(0, 32, 51, 0.6);
+          }
+        }
+      } 
+      .start{
+        margin-left: 106px;
+        .startHeader{
+          font-family: 'Segoe UI';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 150%;
+          color: #002033;
+        }
+        .introContainer{
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          .introText{
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: rgba(0, 32, 51, 0.6);
+          }
+          .introCircle{
+            display: block;
+            width: 4px;
+            height: 4px;
+            margin: 0 8px;
+            border-radius: 50%;
+            background: rgba(0, 32, 51, 0.6);
+          }
+        }
+        .info{
+          margin-top: 8px;
+          font-family: 'Segoe UI';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #002033;
+        }
+        .btn{
+          margin-top: 35px;
+          font-family: 'Segoe UI';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 40px;
+          text-align: center;
+          color: #FFFFFF;
+          background: #0078D2;
+          border-radius: 4px;
+          padding: 0 20px;
+          border: 1px solid #0078D2;
+        }
+        .btn:hover{
+          box-sizing: border-box;
+          border: 1px solid #0078D2;
+          transition: .3s;
+          color: #0078D2;
+          background: #fff;
+        }
+      } 
+    }
+    .show{
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
+      position: relative;
+      .showBtn{
+        position: relative;
+        
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: rgba(0, 57, 92, 0.8);
+        background: rgba(0, 66, 105, 0.07);
+        border-radius: 4px;
+        padding: 0 12px;
+        img{
+          margin-left: 11px;
+        }
+      }
+      .showBtn:hover{
+        transition: .3s;
+        background: rgba(0, 66, 105, .2);
+      }
+    }
+    .show::before{
+      content:'';
+      background: rgba(0, 65, 102, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 44%;
+      left: 0;
+    }
+    .show::after{
+      content:'';
+      background: rgba(0, 65, 102, 0.2);
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 44%;
+      right: 0;
+    }
+}
+
+@media(max-width:1480px){
+  .container{
+    .show::before{
+      width: 40%;
+    }
+    .show::after{
+      width: 40%;
+    }
+  }
+}
+
+@media(max-width:1020px){
+  .container{
+    .show::before{
+      width: 35%;
+    }
+    .show::after{
+      width: 35%;
+    }
+  }
+}
+
+@media(max-width:950px){
+  .container{
+    .card{
+      padding: 10px;
+      .start{
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+@media(max-width:575px){
+  .container{
+    .show::before{
+      width: 32%;
+    }
+    .show::after{
+      width: 32%;
+    }
+  }
+}
+
+@media(max-width:501px){
+  .container{
+    .card{
+      flex-direction: column;
+      .start{
+        margin-left: 0px;
+        text-align: center;
+        .introContainer{
+          justify-content: center;
+        }
+        .btn{
+          display: block;
+          margin: 10px auto 0;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:445px){
+  .container{
+    .show::before{
+      width: 30%;
+    }
+    .show::after{
+      width: 30%;
+    }
+  }
+}
+
+@media(max-width:390px){
+  .container{
+    .show::before{
+      width: 27%;
+    }
+    .show::after{
+      width: 27%;
+    }
+  }
+}
+
+@media(max-width:350px){
+  .container{
+    .show::before{
+      width: 25%;
+    }
+    .show::after{
+      width: 25%;
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.container{
+    margin-top: 48px;
+    .header{
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: #002033;
+    }
+    .themeContainer{
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0, 66, 105, 0.28);
+        border-radius: 4px;
+        margin-top: 16px;
+        width: fit-content;
+        .item{
+            .theme{
+                background: inherit;
+                padding: 0px  20px;
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #002033;
+                border-right:1px solid  rgba(0, 66, 105, 0.28);
+                background: #ECF1F4;
+            }
+            .theme:hover{
+                transition: .3s;
+                color: rgba(0, 57, 92, 0.8);
+            }
+            .lastBtn{
+                border: none;
+            }
+            .theme__active{
+                padding: 9.5px 20px;
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: rgba(0, 57, 92, 0.8);
+                background: rgba(0, 66, 105, 0.07);
+                border-radius: 4px;
+            }
+        }    
+    }
+    .cardContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 96px;
+        .card{
+            margin-top: 24px;
+            width: 426px;
+            padding: 32px;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+            border-radius: 8px;
+            .cardHeader{
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 150%;
+                color: #002033;
+            }
+            .introContainer{
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+                .introText{
+                    font-family: 'Segoe UI';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: rgba(0, 32, 51, 0.6);
+                }
+                .introCircle{
+                    margin:0 8px ;
+                    width: 4px;
+                    height: 4px;
+                    background: rgba(0, 32, 51, 0.6);
+                    border-radius: 50%;
+                }
+            }
+            .info{
+                margin-top: 11px;
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #002033;
+            }
+            .cardFooter{
+                margin-top: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .cardBtn{
+                    background-color: #fff;
+                    padding:0 20px;
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Segoe UI';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #0078D2;
+                    svg{
+                        margin-right: 14px;
+                    }
+                    border: 1px solid #0078D2;
+                    border-radius: 4px;
+                }
+                .cardBtn:hover{
+                    transition: .3s;
+                    background: #0078D2;
+                    color: #fff;
+                    svg{
+                        path{
+                            transition: .3s;
+                            fill:#fff
+                        }
+                    }
+                }
+                .cardBtnCommon{
+                    background: #0078D2;
+                    border-radius: 4px;
+                    border: 1px solid #0078D2;
+                    padding: 0 20px;
+                    font-family: 'Segoe UI';
+                    color: #fff;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 40px;
+                }
+                .cardBtnCommon:hover{
+                    transition: .3s;
+                    background-color: #fff;
+                    color: #0078D2;
+                }
+                .readyContainer{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .count{
+                        margin-right: 6px;
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #002033;
+                    }
+                    .task{
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: rgba(0, 32, 51, 0.6);
+                    }
+                    svg {
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        margin-left: 10px;
+                      }  
+                      .progessBg {
+                        fill: none;
+                        stroke-width: 2px;
+                        stroke: rgba(0, 32, 51, 0.08);;
+                      }
+                      .progress {
+                        fill: none;
+                        stroke-width: 2px;
+                        stroke: #24C38E;
+                        stroke-dasharray: 40.56;
+                        stroke-dashoffset: 0%;
+                        transform: rotate(-90deg);
+                        transform-origin: 50% 50%;
+                      }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1140px){
+    .container{
+        .cardContainer{
+            .card{
+                width: 380px;
+            }
+        }
+    }
+}
+
+@media(max-width:1025px){
+    .container{
+        .cardContainer{
+            .card{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:885px){
+    .container{
+        .themeContainer{
+            width: 100%;
+            overflow-x: scroll;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        .cardContainer{
+            .card{
+                .cardFooter{
+                    .cardBtnCommon{
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:455px){
+    .container{
+        .cardContainer{
+            .card{
+                padding: 10px;
+                .cardHeader{
+                    font-size: 18px;
+                }
+                .cardFooter{
+                    margin-top: 15px;
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+                .readyContainer{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
