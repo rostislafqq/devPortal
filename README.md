@@ -34,5 +34,7 @@ https://dadata.ru/api/find-party/
 
 </pre>
 
-<a href='https://rostislafqq.github.io/devPortal/'>ссылка на приложение</a>
+<a href='https://rostislafqq.github.io/devPortal/'>ссылка на приложение</a> <br/>
+на вторую часть можно попасть по ссылке (см картинку)
+![image](https://user-images.githubusercontent.com/97777490/231240288-a248e6fb-435d-4bfd-bd1c-487d95defcb5.png)
 
